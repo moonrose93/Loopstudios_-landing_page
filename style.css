@@ -106,7 +106,8 @@ body{
 
 .heading-banner{
     position: absolute;
-    top:600px;
+    top:100px;
+    right:520px;
     font-size: 6rem;
     color: white;
     border: 1px solid white;
