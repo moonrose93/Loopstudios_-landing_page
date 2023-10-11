@@ -591,10 +591,14 @@ margin-left: 120px;
   body{
     background-image: none;
 
+
+    .image-mob{
+        width:420px;
+       position: relative;
+    }
     .hero-mobile{
-      width:80%
-      position: relative;
-      right:60px;
+      width:100%
+          max-width:420px;
         height:100%;
     
        
