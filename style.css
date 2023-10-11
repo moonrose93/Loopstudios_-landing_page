@@ -1,0 +1,822 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/*To set the background as container to the body we always link it inside css with the url and we always set a background attachment - scroll or fixed */
+body{
+    background-image: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    
+    transform: translate(-50%,-50%);
+    top:120%;
+    left:50%;
+
+}
+
+/*We must style every div container with the width and height same as the width and height of the cpntainer*/
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:15%;
+    left:50%;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.menus{
+    display: flex;
+    width: 500px;
+    position: absolute;
+    right: 100px;
+   
+}
+
+.logo1{
+ position: absolute;
+ left: 10px;
+}
+
+.about1,
+.careers1,
+.events1,
+.products1,
+.support1{
+    margin-left: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.about,
+.careers,
+.events,
+.products,
+.support{
+    margin-left: 40px;
+    color: white;
+    cursor: pointer;
+   
+   
+}
+
+
+.about:hover,
+.careers:hover,
+.events:hover,
+.products:hover,
+.support:hover{
+    
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+   
+}
+
+
+
+
+
+
+.div1-main{
+    display: flex;
+    width:100%;
+    max-width: 1200px;
+    margin-top: 1400px;
+  justify-content: center;
+}
+
+
+
+
+.heading-banner{
+    position: absolute;
+    top:600px;
+    font-size: 6rem;
+    color: white;
+    border: 1px solid white;
+    padding: 30px 60px 30px 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 5rem;
+}
+
+.div-2-main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.heading2{
+    position: absolute;
+    right: 920px;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div-2-images{
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1200px;
+   
+    
+}
+
+.reserved{
+  color: white;
+}
+
+
+.footer-mobile{
+  display: none;
+}
+
+.footer-desktop{
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top:2800px;
+  background-color: black;
+}
+
+/* Style the overlay for images when hovered */
+.overlay-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* White overlay with some transparency */
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease; /* Apply a smooth transition */
+}
+
+.first-line-images,
+.second-line-images{
+    display: flex;
+    cursor: pointer;
+    
+    
+    
+}
+
+.second-line-images{
+    margin-top: 20px;
+}
+
+
+
+  /*We can set the width of a div and justify content space between in this case 500pxwidth and justify content with space between in that space
+  So with that they will occupy the width of 500px and will be distributed evenly-Setting widths of divs we want to justify content in that div  */
+  .social-media-icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-right:120px ;
+    
+  }
+
+  
+
+  .footer-heading{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    max-width: 1200px;
+    position: absolute;
+    margin-top: 60px;
+    left: 350px;
+
+  }
+
+  .leader{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    line-height: 3rem;
+    text-transform: uppercase;
+  }
+
+  .paragraph-leader{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+   
+  
+
+
+  /*We always set width and height to the icons so that they wont distort, same for the logos*/
+  .icon-twitter,
+  .icon-facebook,
+  .icon-instagram,
+  .icon-pinterest{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+
+  .logo2{
+    width: 120px;
+    aspect-ratio: 3/2;
+    object-fit: contain;  
+  margin-right: 750px;
+  }
+
+
+  .icon-facebook:hover,
+  .icon-instagram:hover,
+  .icon-pinterest:hover,
+  .icon-twitter:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+   
+  }
+
+
+  /*We position elements inside the divs accordingly to the design. Ife we set display flex to 2 divs inside one then for separation we use margin between those divs */
+
+ 
+  .menus-down{
+    justify-content: center;
+    display: flex;
+    margin-right: 130px;
+    margin-top: 150px;
+    
+
+  }
+
+  .reserved{
+   margin-left: 390px;
+  }
+
+  .div-1-right{
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    width: 500px;
+    padding: 30px 80px;
+    top:1610px;
+    left:580px;
+
+  }
+
+
+  /*We use position relative for paragraph inside divs so that the paragraph to be placed inside the image above*/
+.one,
+.two,
+.three,
+.four{
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  bottom: 500px;
+  line-height: 1.5rem;
+  left: 30px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.3rem;
+  z-index: 1;
+}
+
+
+
+
+
+/* This code targets the <p> elements with classes .one, .two, .three, etc. and
+changes their color to black when you hover over the corresponding images with classes .container-image-one,
+.container-image-two, .container-image-three, etc. */
+
+
+/* Actually we first target the divs with the images and when hovered the divs we add + the classes we want to change color so when the divs are
+ hovered the classes added with + to change their colors to black in this case the p classes*/
+
+.container-image-one:hover + .one,
+.container-image-two:hover + .two,
+.container-image-three:hover + .three,
+.container-image-four:hover + .four,
+.container-image-five:hover + .six,
+.container-image-six:hover + .seven,
+.container-image-seven:hover + .eight,
+.container-image-eight:hover + .nine {
+  color: black;
+}
+
+
+
+
+
+
+
+
+.two{
+  left: 310px;
+}
+
+.three{
+  left:580px
+}
+
+.four{
+  left:860px
+}
+
+
+.five,
+.six,
+.seven,
+.eight,
+.nine{
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  bottom: 20px;
+  line-height: 1.5rem;
+  left: 30px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+
+.seven{
+  left: 310px;
+}
+
+.eight{
+  left:580px
+}
+
+.nine{
+  left:850px
+}
+
+
+/*Setting margin to right to all the containers so that the images will separate from eachouther 20px*/
+.container-image-one,
+.container-image-two,
+.container-image-three,
+.container-image-five,
+.container-image-six,
+.container-image-seven{
+ margin-right: 20px;
+}
+
+/* To the container of the images we always set position relative, so that will occupy only inside that container 
+1.Setting the whole container to position relative 
+2.Creating another div with class overlay inside the previous container we created
+3.Styling the overlay container with position absolute in css - top and left 0, width and height100% to cover all the imag, setting background color and opacity 0 with transition for the opacity0.3s ease
+4.*/
+.container-image-one,
+.container-image-two,
+.container-image-three,
+.container-image-four,
+.container-image-five,
+.container-image-six,
+.container-image-seven,
+.container-image-eight{
+ position: relative;
+  
+}
+
+
+/*We make overlay with opacity-everythin needts to be in the same div inside in html , the image and the opacity div*/
+/*Styling the overlay div thats inside the  divs for images - we always set for the overlay position absolute when styling and transition with opacity0.3s ease
+width and height 100% so that will occupy the whole container(image)*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* White overlay with some transparency */
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s ease; /* Apply a smooth transition */
+}
+
+/*Then we  Show the overlay on hover - setting the div class of the container with the image and with the hover pseudo and space the overlay class we styled  */
+.container-image-one:hover .overlay,
+.container-image-two:hover .overlay,
+.container-image-three:hover .overlay,
+.container-image-four:hover .overlay,
+.container-image-five:hover .overlay,
+.container-image-six:hover .overlay,
+.container-image-seven:hover .overlay,
+.container-image-eight:hover .overlay{
+  opacity: 1; /* Make the overlay visible on hover */
+}
+
+/*Wrap up: To stayle a image with a overlay on hover we need a div where we need to place the image in the Html document and a empty div inside the div with the image for the overlay that  we ar going
+to style in css. after that the whole div is set position relative and the overlay div is styled with position absolute-top left 0 width and height 100% , bkg color opacity, transition:opacity.
+ And last but not least, we set the main div class for the image and after the class we set a pseudo for hover and space and the overlay div class - with opacity 1 - first the opacity on the overlay 
+ was 0 on styling then when the div is hovered the opacity becomes 1*/
+
+
+
+ .mobile-menu-container{
+  width: 100%;
+  max-width: 420px;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  z-index: 1;
+
+  display: none;
+}
+
+.logo-close{
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  width: 300px;
+  margin-left: 45px;
+}
+
+.menu-mobile{
+  margin-top: 30px;
+  margin-left: 60px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+
+.icon-close{
+width: 30px;
+aspect-ratio: 3/4;
+object-fit: contain;
+margin-left: 120px;
+
+}
+
+.logo-mobile-menu{
+  width: 140px;
+  aspect-ratio: 3/4;
+  object-fit: contain;
+ margin-left: 30px;
+  
+}
+
+  /*We can also set height and width to btns*/
+  .btn{
+    padding: 5px 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left:960px;
+  }
+
+  .btn:hover{
+    background-color: black;
+    color: white;
+    transition:  ease-out;
+  }
+
+
+  /*We give the left container the full width so that will occupy the whole width of the div1-main main container because we take off the right container from the 
+  normal document flow ( of the main container with position absolute) that gap needs to be filled with the full width of that container. And  then we style the right container */
+  .div-1-left{
+    width:1200px;
+  }
+
+  .container-mobile-version{
+    display: none;
+  }
+
+  /*Mobile*/
+
+  @media (max-width:480px) {
+    
+
+    .mobile-menu-container{
+      display: none;
+    }
+
+    .container{
+     display: none;
+  
+  }
+
+
+  .footer-mobile{
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    background-color: black;
+    position: absolute;
+    
+    top:2600px;
+  }
+
+
+  /*To set justify content space between we always need a display flex so that justify content to work and also width to be set for that div so that the icons can spread*/
+  .social-media-icons-mobile{
+    justify-content: space-between;
+    width: 200px;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+  }
+
+
+  
+
+
+  .menus-down-mobile{
+   font-size: 0.9rem;
+   line-height: 1.5rem;
+   text-align: center;
+   color: white;
+
+  }
+
+  .logo-down-mobile{
+    width: 100%;
+    max-width: 150px;
+    margin-top: 50px;
+    margin-left: 130px;
+  }
+
+  .footer-desktop{
+    display: none;
+  }
+  
+
+  /*We never set the height of a container on the mobile versuion just the width*/
+  .container-mobile-version{
+    display: block;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  body{
+    background-image: none;
+
+    .hero-mobile{
+      width: 420px;
+    }
+
+    .nav-bar-mobile{
+      width: 420px;
+      
+    }
+
+
+ .logo-icon{
+  
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  
+  justify-content: center;
+  align-items: center;
+  
+ }
+
+ .logo-mobile{
+  width: 150px;
+  margin-right: 120px;
+ }
+
+
+ .reserved-mobile{
+  margin-top: 30px;
+ }
+
+ .icon-hamburger{
+ width: 30px;
+ height: 20px;
+ margin-left: 40px;
+ }
+
+ 
+.heading-banner2{
+  position: absolute;
+  left: 30px;
+  bottom: 400px;
+  font-size: 2.3rem;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 20px 10px 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  
+}
+
+/*We dont set height for the mobile versions containers we let them occupy natural height as the elements are added*/
+.mobile-mail-container{
+  width: 100%;
+  max-width: 420px;
+}
+
+
+/*Centering an image inside a div with padding*/
+.mobile-person{
+ max-width: 80%;
+ padding: 80px 40px 0px 40px;
+}
+
+.leader-mobile{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+
+.paragraph-leader-mobile{
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: rgba(128, 128, 128, 0.822);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+  
+.first-line-images,
+.second-line-images{
+    display: grid;
+   
+    cursor: pointer;
+    
+  
+}
+
+
+
+
+
+
+
+  }
+
+  .div-2-images{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 420px;
+   
+  
+/*For the mobile version the images to come to the center we set the divs for each image with hover to a margin left and bottom so to be closer to the design.(we changed the mobile images)*/
+  .container-image-one,
+  .container-image-two,
+  .container-image-three,
+  .container-image-four,
+  .container-image-five,
+  .container-image-six,
+  .container-image-seven,
+  .container-image-eight {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+
+
+.container-image-one:hover + .one,
+.container-image-two:hover + .two,
+.container-image-three:hover + .three,
+.container-image-four:hover + .four,
+.container-image-five:hover + .six,
+.container-image-six:hover + .seven,
+.container-image-seven:hover + .eight,
+.container-image-eight:hover + .nine {
+  color: black;
+}
+
+  .one,
+  .two,
+  .three,
+  .four{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    bottom: 10px;
+    line-height: 1.2rem;
+    left: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.3rem;
+    z-index: 1;
+  }
+
+  .div-2-images{
+    display: grid;
+  }
+
+ .five,
+.six,
+.seven,
+.eight,
+.nine{
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  bottom: 10px;
+  line-height: 1.2rem;
+  left: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 5px 30px;
+  font-size: 0.9rem;
+  letter-spacing: 0.09rem;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left:140px
+}
+
+.btn:hover{
+  background-color: black;
+  color: white;
+  transition:  ease-out;
+}
+
+.mobile-menu-container{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+  }
+}
+
+
+
+  
