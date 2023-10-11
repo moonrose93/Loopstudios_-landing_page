@@ -20,8 +20,8 @@ body{
     position: absolute;
     
     transform: translate(-50%,-50%);
-    top:120%;
-    left:50%;
+    top:115%;
+    left:52%;
 
 }
 
@@ -273,13 +273,13 @@ body{
    margin-left: 390px;
   }
 
-  .div-1-right{
+ .div-1-right{
     z-index: 2;
     background-color: white;
     position: absolute;
     width: 500px;
     padding: 30px 80px;
-    top:1610px;
+    top:1390px;
     left:580px;
 
   }
@@ -514,8 +514,9 @@ margin-left: 120px;
 
   /*We give the left container the full width so that will occupy the whole width of the div1-main main container because we take off the right container from the 
   normal document flow ( of the main container with position absolute) that gap needs to be filled with the full width of that container. And  then we style the right container */
-  .div-1-left{
+ .div-1-left{
     width:1200px;
+    margin-top: -200px;
   }
 
   .container-mobile-version{
