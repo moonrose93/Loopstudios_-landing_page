@@ -8,7 +8,7 @@ body{
 
 /*To set the background as container to the body we always link it inside css with the url and we always set a background attachment - scroll or fixed */
 body{
-    background-image: url("images/desktop/image-hero.jpg");
+    background-image: url("./image-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
