@@ -592,8 +592,10 @@ margin-left: 120px;
     background-image: none;
 
     .hero-mobile{
-      width: 80%;
+      width: 100%;
+      max-width:420px;
       height:100%;
+        max-heigt: 600px;
        
     }
 
