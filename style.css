@@ -203,10 +203,10 @@ body{
     width: 100%;
     
     max-width: 1200px;
-    position: absolute;
+    
     margin-top: 60px;
-    left: 350px;
-
+    margin-left: 320px;
+   
   }
 
   .leader{
@@ -259,12 +259,13 @@ body{
   /*We position elements inside the divs accordingly to the design. Ife we set display flex to 2 divs inside one then for separation we use margin between those divs */
 
  
-  .menus-down{
+.menus-down{
     justify-content: center;
     display: flex;
-    margin-right: 130px;
-    margin-top: 150px;
-    
+    margin-left: 250px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
 
   }
 
